@@ -4,10 +4,9 @@
 
 A RESTful API built with NestJS, TypeScript, and PostgreSQL for managing user data. The features includes:
 
-- User creation with password hashing
-- User retrieval by ID
-- User information updates
-- Input validation using class-validator
+- Authentication and Authorization
+- User Profile Management
+- User Roles and Permissions
 
 ## Getting Started
 - Technology Stack
@@ -50,37 +49,29 @@ The API will be available at http://localhost:3000
 
 ### Endpoints
 
-#### Create User
+#### Auth
 ```http
-POST /users
+POST /auth/register
+POST /auth/login
 ```
 
-Request body:
+<!-- Request body:
 ```json
 {
   "name": "John Doe",
   "email": "john@example.com",
   "password": "password123"
 }
-```
+``` -->
 
-#### Get User by ID
+#### Users
 ```http
 GET /users/:id
-```
-
-#### Update User
-```http
 PUT /users/:id
 ```
 
-Request body:
-```json
-{
-  "name": "Jane Doe",
-  "email": "jane@example.com",
-}
-```
 
+### API Documentation
+The Swagger documentation is available at: http://localhost:3000/api/docs
 
 Thank you!
