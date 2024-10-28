@@ -45,7 +45,7 @@ $ npm run start:prod
 ```
 
 ## API Documentation
-The API will be available at http://localhost:3000
+The Swagger documentation is available at: http://localhost:3000/api/docs
 
 ### Endpoints
 
@@ -69,9 +69,5 @@ POST /auth/login
 GET /users/:id
 PUT /users/:id
 ```
-
-
-### API Documentation
-The Swagger documentation is available at: http://localhost:3000/api/docs
 
 Thank you!
